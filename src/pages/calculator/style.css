@@ -14,3 +14,8 @@
 .output {
     min-height: 100px;
 }
+
+.output input {
+    min-height: 30px;
+    font-size: large;
+}
