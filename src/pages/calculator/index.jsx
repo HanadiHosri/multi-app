@@ -15,6 +15,10 @@ const Calculator = () => {
         setResult("");
     }
 
+    const calculate = () => {
+        setResult(eval(result));
+    }
+
     return (
         <div className="page">
             <div className="calculator-container flex column center">
@@ -48,7 +52,7 @@ const Calculator = () => {
                 <div>
                     <button name="." onClick={handleClick}>.</button>
                     <button name="0" onClick={handleClick}>0</button>
-                    <button onClick={handleClick}>=</button>
+                    <button onClick={calculate}>=</button>
                 </div>
             </div>
         </div>
