@@ -1,0 +1,16 @@
+.calculator-container {
+    gap: 5px;
+    background-color: rgb(192, 233, 219);
+    padding: 10px;
+
+}
+
+.calculator-container button {
+    padding: 20px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.output {
+    min-height: 100px;
+}
