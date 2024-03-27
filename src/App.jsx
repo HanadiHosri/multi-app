@@ -1,3 +1,5 @@
+import "./styles/utilities.css";
+
 import Calculator from "./pages/calculator";
 
 function App() {
