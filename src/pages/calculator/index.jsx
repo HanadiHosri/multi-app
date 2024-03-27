@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./style.css";
 
@@ -18,6 +18,21 @@ const Calculator = () => {
     const calculate = () => {
         setResult(eval(result));
     }
+
+    useEffect(() => {
+        const handleKeyPress = (e) => {
+            const { key } = e;
+            if (!isNaN(key) || key === "." || "+-*/".includes(key)) {
+                setResult(result.concat(key));
+            } else if (key === "Enter") {
+                calculate();
+            } else if (key === "Backspace") {
+                clear();
+            }
+        };
+        document.addEventListener("keydown", handleKeyPress);
+        return () => { document.removeEventListener("keydown", handleKeyPress);};
+    }, [result]);
 
     return (
         <div className="page">
