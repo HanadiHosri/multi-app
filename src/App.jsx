@@ -1,9 +1,9 @@
-
+import Calculator from "./pages/calculator";
 
 function App() {
   return (
     <div className="app">
-      <h1>hello</h1>
+      <Calculator/>
     </div>
   );
 }
