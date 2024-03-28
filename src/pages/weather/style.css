@@ -1,3 +1,9 @@
+.page {
+    background: url('../../assets/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .container {
     background-color: rgb(157, 238, 238);
     width: 380px;
