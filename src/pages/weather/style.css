@@ -4,8 +4,15 @@
     background-size: cover;
 }
 
+.page > h1 {
+    text-align: center;
+    padding: 100px;
+    font-size: 50px;
+}
+
 .container {
-    background-color: rgb(157, 238, 238);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
     width: 380px;
     padding: 30px;
     border-radius: 10px;
