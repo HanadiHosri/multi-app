@@ -14,15 +14,11 @@ const Weather = () => {
         .catch(err => console.log(err));
     }, []);
 
-    useEffect(() => {
-        console.log(weatherData);
-    }, [weatherData]);
-
     return (
         <div className="page">
             <h1>Beirut Weather</h1>
             <div className="container">
-                {weatherData.time.map((day, index) => (
+                {weatherData.time && weatherData.time.map((day, index) => (
                     <div key={index} className="weather-container">
                         <div className="date flex center">
                             <h2>{day}</h2>
