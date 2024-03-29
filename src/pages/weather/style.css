@@ -1,7 +1,9 @@
-.page {
+.weather-page {
     background: url('../../assets/sky.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .page > h1 {

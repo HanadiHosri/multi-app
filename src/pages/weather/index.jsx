@@ -15,7 +15,7 @@ const Weather = () => {
     }, []);
 
     return (
-        <div className="page">
+        <div className="weather-page">
             <h1>Beirut Weather</h1>
             <div className="container">
                 {weatherData.time && weatherData.time.map((day, index) => (
