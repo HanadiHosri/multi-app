@@ -8,7 +8,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav>
+        <nav className="nav">
             <ul>
                 <li>
                     <a onClick={() => handleNavigation("/calculator")}>Calculator</a>
